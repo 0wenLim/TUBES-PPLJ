@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="400.0" prefWidth="600.0" spacing="10.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tubesppljj.JoinControl">
+
+    <Label id="welcome" fx:id="welcomeText" text="MENU">
+        <font>
+            <Font size="20.0" />
+        </font></Label>
+    <Button fx:id="join1Button" onMouseClicked="#onJoin1Click" text="          " />
+    <Button fx:id="join2Button" onMouseClicked="#onJoin2Click" text="          " />
+    <Button fx:id="join3Button" onMouseClicked="#onJoin3Click" text="          " />
+    <Button fx:id="join4Button" onMouseClicked="#onJoin4Click" text="          " />
+    <Button fx:id="join5Button" onMouseClicked="#onJoin5Click" text="          " />
+</VBox>
