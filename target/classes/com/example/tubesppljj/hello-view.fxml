@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="327.0" prefWidth="464.0" spacing="10.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tubesppljj.LoginController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <Label id="welcome" fx:id="welcomeText" text="Welcome to Tic Tac Toe">
+      <font>
+         <Font size="18.0" />
+      </font></Label>
+   <Label fx:id="usernameLabel" layoutX="148.0" layoutY="91.0" prefHeight="27.0" prefWidth="59.0" text="username" />
+   <TextField fx:id="usernameField" onKeyTyped="#onUsernameFieldTextChange" prefHeight="26.0" prefWidth="338.0" />
+   <Label fx:id="welcomeText11" layoutX="212.0" layoutY="114.0" prefHeight="27.0" prefWidth="59.0" text="password" />
+   <TextField fx:id="passwordField" onKeyTyped="#onPasswordFieldChange" prefHeight="26.0" prefWidth="326.0" />
+    <Button fx:id="loginButton" onMouseClicked="#onLoginButtonClick" text="Log In" />
+</VBox>

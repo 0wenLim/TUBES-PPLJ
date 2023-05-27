@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane fx:id="gameBoard" alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tubesppljj.GameController">
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+
+       <Label text="Player ID" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+
+       <!--Labels -->
+       <Label text=" " GridPane.columnIndex="0" GridPane.rowIndex="2" />
+       <Label text="A" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+       <Label text="B" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+       <Label text="C" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+       <Label alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="43.0" text="1" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+       <Label alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="43.0" text="2" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+       <Label alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="43.0" text="3" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+
+       <!-- Game Board Buttons -->
+       <Button fx:id="buttonA1" GridPane.columnIndex="1" GridPane.rowIndex="3" onMouseClicked="#onA1ButtonClick" />
+       <Button fx:id="buttonA2" GridPane.columnIndex="1" GridPane.rowIndex="4" onMouseClicked="#onA2ButtonClick" />
+       <Button fx:id="buttonA3" GridPane.columnIndex="1" GridPane.rowIndex="5" onMouseClicked="#onA3ButtonClick" />
+       <Button fx:id="buttonB1" GridPane.columnIndex="2" GridPane.rowIndex="3" onMouseClicked="#onB1ButtonClick"/>
+       <Button fx:id="buttonB2" GridPane.columnIndex="2" GridPane.rowIndex="4" onMouseClicked="#onB2ButtonClick"/>
+       <Button fx:id="buttonB3" GridPane.columnIndex="2" GridPane.rowIndex="5" onMouseClicked="#onB3ButtonClick"/>
+       <Button fx:id="buttonC1" GridPane.columnIndex="3" GridPane.rowIndex="3" onMouseClicked="#onC1ButtonClick"/>
+       <Button fx:id="buttonC2" GridPane.columnIndex="3" GridPane.rowIndex="4" onMouseClicked="#onC2ButtonClick"/>
+       <Button fx:id="buttonC3" GridPane.columnIndex="3" GridPane.rowIndex="5" onMouseClicked="#onC3ButtonClick"/>
+
+       <!-- Input Field -->
+       <Label text="      " GridPane.columnIndex="4" GridPane.rowIndex="2" />
+
+       <Label text="Enter move (e.g. A1):" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+
+       <HBox GridPane.columnIndex="5" GridPane.rowIndex="3">
+           <TextField fx:id="moveField" onKeyTyped="#onMoveFieldTextChange" />
+       </HBox>
+
+   </children>
+</GridPane>
